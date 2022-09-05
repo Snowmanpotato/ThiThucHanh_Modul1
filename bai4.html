@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 4</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //Xây dựng lớp Staff
+    class Staff {
+        constructor(fullname, email) {
+            this.fullname = name;
+            this.email = email;
+        }
+        setFullname(fullname) {
+           this.fullname = fullname;
+       };
+        getFullname() {
+           return this.fullname;
+       };
+        setEmaill(email) {
+           this.email = email;
+       };
+        getEmail() {
+           return this.email;
+       };
+       toString(){
+           return `
+                    <table border = '1'>
+                        <tr>
+                            <td>Full Name: </td>
+                            <td>${this.fullname}</td>
+                            </tr> 
+                        <tr>
+                            <td>Email: </td>
+                            <td>${this.email}</td>
+                        </tr> 
+                    </table>
+                `;
+       };
+    };
+    //Sử dụng lớp Staff
+    let david = new Staff ("David", "david@gmail.com");
+    david.setFullname("David Do");
+    david.setEmaill("david.do@gmail.com");
+    document.write(david.toString());
+    let Staffs = [
+        new Staff ("David", "david@gmail.com"),
+        new Staff ("Luyn", "luyn@gmail.com"),
+        new Staff ("Cuong", "cuong@gmail.com"),
+    ];
+    for (let i = 0; i<Staffs.length; i++){
+document.write(Staffs[i].toString());
+    };
+</script>
+
+</html>
