@@ -12,7 +12,7 @@
 
 </body>
 <script>
-
+//hàm đếm ký tự nguyên âm trong chuỗi cho trước
     const arrayVowel = ["a", "o", "e", "u", "i"];
     function checkVowel(array) {
         let count = 0;
@@ -30,6 +30,7 @@
             return false;
         };
     };
+    //nhập chuỗi bất kì và tìm kí tự nguyên âm
     let array = prompt("Nhập một chuỗi bất kỳ.").split("");
     alert(`Chuỗi [${array}] có ${checkVowel(array)} có ký tự âm của mảng [${arrayVowel}]`);
 </script>

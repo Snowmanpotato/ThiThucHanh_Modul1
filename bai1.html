@@ -15,6 +15,7 @@
     <button onclick="checkNumber()">Result</button>
 </body>
 <script>
+    //hàm trả về nghiệm trong các trường hợp đặc biệt và lời gọi hàm giải phương trình bậc hai
     function checkNumber() {
         let a = Number(document.getElementById("numbera").value);
         let b = Number(document.getElementById("numberb").value);
@@ -28,6 +29,7 @@
         }
         result(a, b, c);
     };
+    //hàm giải phương trình bậc hai
     function result(a, b, c) {
         const x = (b * b) - (4 * a * (c));
         if (x < 0) {
