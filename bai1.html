@@ -26,8 +26,8 @@
         } else if (a == 0 && b != 0) {
             return alert("Phương trình có một nghiệm " + (-c) / b);
         }
-        result(a, b, c)
-    }
+        result(a, b, c);
+    };
     function result(a, b, c) {
         const x = (b * b) - (4 * a * (c));
         if (x < 0) {
@@ -39,8 +39,8 @@
             let x1 = ((-b) + Math.sqrt(x)) / (2 * a);
             let x2 = ((-b) - Math.sqrt(x)) / (2 * a);
             return alert("Phương trình có hai nghiệm phân biệt x1 = " + x1 + " và x2 = " + x2);
-        }
-    }
+        };
+    };
 </script>
 
 </html>
