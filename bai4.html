@@ -19,19 +19,19 @@
             this.email = email;
         }
         setFullname(fullname) {
-           this.fullname = fullname;
-       };
+            this.fullname = fullname;
+        };
         getFullname() {
-           return this.fullname;
-       };
+            return this.fullname;
+        };
         setEmaill(email) {
-           this.email = email;
-       };
+            this.email = email;
+        };
         getEmail() {
-           return this.email;
-       };
-       toString(){
-           return `
+            return this.email;
+        };
+        toString() {
+            return `
                     <table border = '1'>
                         <tr>
                             <td>Full Name: </td>
@@ -43,20 +43,20 @@
                         </tr> 
                     </table>
                 `;
-       };
+        };
     };
     //Sử dụng lớp Staff
-    let david = new Staff ("David", "david@gmail.com");
+    let david = new Staff("David", "david@gmail.com");
     david.setFullname("David Do");
     david.setEmaill("david.do@gmail.com");
     document.write(david.toString());
     let Staffs = [
-        new Staff ("David", "david@gmail.com"),
-        new Staff ("Luyn", "luyn@gmail.com"),
-        new Staff ("Cuong", "cuong@gmail.com"),
+        new Staff("David", "david@gmail.com"),
+        new Staff("Luyn", "luyn@gmail.com"),
+        new Staff("Cuong", "cuong@gmail.com"),
     ];
-    for (let i = 0; i<Staffs.length; i++){
-document.write(Staffs[i].toString());
+    for (let i = 0; i < Staffs.length; i++) {
+        document.write(Staffs[i].toString());
     };
 </script>
 
