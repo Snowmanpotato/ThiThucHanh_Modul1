@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" placeholder="Nhập số A" id="numbera">;
+    <input type="number" placeholder="Nhập số B" id="numberb">;
+    <input type="number" placeholder="Nhập số C" id="numberc">;
+    <button onclick="checkNumber()">Result</button>
+</body>
+<script>
+    function checkNumber() {
+        let a = Number(document.getElementById("numbera").value);
+        let b = Number(document.getElementById("numberb").value);
+        let c = Number(document.getElementById("numberc").value);
+        if (a == 0 && b == 0 && c == 0) {
+            return alert("Phương trình vô số nghiệm!");
+        } else if (a == 0 && b == 0) {
+            return alert("Phương trình không xác định!");
+        } else if (a == 0 && b != 0) {
+            return alert("Phương trình có một nghiệm " + (-c) / b);
+        }
+        result(a, b, c)
+    }
+    function result(a, b, c) {
+        const x = (b * b) - (4 * a * (c));
+        if (x < 0) {
+            return alert("Phương trình vô nghiệm!");
+        } else if (x == 0) {
+            x1 = x2 = - b / 2 * a;
+            return alert("Phương trình có nghiệm kép " + x1 +" và" + x2);
+        } else {
+            let x1 = ((-b)+ Math.sqrt(x))/(2*a);
+            let x2 = ((-b)- Math.sqrt(x))/(2*a);
+            return alert("Phương trình có hai nghiệm phân biệt " + x1 +" và" + x2);
+        }
+    }
+</script>
+
+</html>
