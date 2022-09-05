@@ -9,9 +9,9 @@
 </head>
 
 <body>
-    <input type="number" placeholder="Nhập số A" id="numbera">;
-    <input type="number" placeholder="Nhập số B" id="numberb">;
-    <input type="number" placeholder="Nhập số C" id="numberc">;
+    <input type="number" placeholder="Nhập số A" id="numbera">
+    <input type="number" placeholder="Nhập số B" id="numberb">
+    <input type="number" placeholder="Nhập số C" id="numberc">
     <button onclick="checkNumber()">Result</button>
 </body>
 <script>
@@ -34,11 +34,11 @@
             return alert("Phương trình vô nghiệm!");
         } else if (x == 0) {
             x1 = x2 = - b / 2 * a;
-            return alert("Phương trình có nghiệm kép " + x1 +" và" + x2);
+            return alert("Phương trình có nghiệm kép " + x1 + " và" + x2);
         } else {
-            let x1 = ((-b)+ Math.sqrt(x))/(2*a);
-            let x2 = ((-b)- Math.sqrt(x))/(2*a);
-            return alert("Phương trình có hai nghiệm phân biệt " + x1 +" và" + x2);
+            let x1 = ((-b) + Math.sqrt(x)) / (2 * a);
+            let x2 = ((-b) - Math.sqrt(x)) / (2 * a);
+            return alert("Phương trình có hai nghiệm phân biệt " + x1 + " và" + x2);
         }
     }
 </script>
